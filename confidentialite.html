@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>Politique de confidentialité — FoxScanner</h1>
-<p><em>Dernière mise à jour : 27 septembre 2026</em></p>
+<p><em>Dernière mise à jour : 28 septembre 2026</em></p>
 
 <p>FoxScanner est une application de numérisation de documents. Notre principe :
 <strong>vos documents vous appartiennent et restent sous votre contrôle</strong>.
@@ -96,7 +96,7 @@ App&nbsp;Store ou Google&nbsp;Play. Avec Premium, aucune publicité n'est affich
 et le SDK publicitaire n'est plus initialisé au démarrage de l'application&nbsp;:
 il ne collecte donc plus de données.</p>
 
-<h2>6. Données techniques conservées sur l'appareil</h2>
+<h2>6. Données techniques</h2>
 <ul>
   <li><strong>Compteur de la version gratuite</strong>&nbsp;: pour appliquer la
       limite quotidienne de documents, l'application enregistre sur votre appareil
@@ -107,21 +107,34 @@ il ne collecte donc plus de données.</p>
       appareil et effacées à son redémarrage. Rien n'est envoyé automatiquement&nbsp;:
       vous pouvez copier ce journal depuis les Réglages pour le joindre à un
       message au support, si vous le souhaitez.</li>
+  <li><strong>Rapports de plantage</strong>&nbsp;: si l'application plante ou
+      rencontre une erreur imprévue, un rapport technique est envoyé à
+      <strong>Firebase&nbsp;Crashlytics</strong> (Google), qui agit pour notre
+      compte, afin que nous puissions corriger le problème. Ce rapport contient
+      l'endroit du code en cause, l'état de l'application au moment du plantage,
+      le modèle d'appareil et la version du système, ainsi qu'un identifiant
+      aléatoire propre à l'installation (pour compter les appareils touchés). Il
+      ne contient <strong>jamais</strong> vos documents, le texte reconnu, votre
+      nom ni votre adresse e-mail, et n'est pas utilisé à des fins publicitaires.
+      Les rapports sont conservés 90&nbsp;jours. Base légale&nbsp;: notre intérêt
+      légitime à fournir une application qui fonctionne. <a
+      href="https://firebase.google.com/support/privacy">Confidentialité de
+      Firebase</a>.</li>
 </ul>
 
 <h2>7. Ce que nous ne faisons pas</h2>
 <ul>
   <li>Pas de compte FoxScanner, pas de collecte d'adresse e-mail&nbsp;;</li>
-  <li>pas d'outil d'analyse d'audience ni de suivi des plantages propre à
-      FoxScanner (en dehors des données techniques de Google&nbsp;ML&nbsp;Kit
-      décrites au point&nbsp;1 et de celles collectées par Google&nbsp;AdMob
-      décrites au point&nbsp;4)&nbsp;;</li>
+  <li>pas d'outil d'analyse d'audience (en dehors des données techniques de
+      Google&nbsp;ML&nbsp;Kit décrites au point&nbsp;1, de celles collectées par
+      Google&nbsp;AdMob décrites au point&nbsp;4 et des rapports de plantage
+      décrits au point&nbsp;6)&nbsp;;</li>
   <li>pas de vente ni de partage de vos données, en dehors du fonctionnement
       publicitaire décrit ci-dessus&nbsp;;</li>
   <li>aucun accès à vos documents par quiconque, y compris nous.</li>
 </ul>
 
-<h2>8. Suppression des données</h2>
+<h2 id="suppression">8. Suppression des données</h2>
 <p>Vos documents, le texte reconnu, le compteur et les réglages de l'application
 sont supprimés de l'appareil en désinstallant l'application (FoxScanner les
 exclut des sauvegardes automatiques d'Android). Les copies
@@ -132,6 +145,10 @@ pour Google&nbsp;Drive, sur <a href="https://drive.google.com">drive.google.com<
 données d'application masquées</em>. Pour retirer l'autorisation
 Google&nbsp;Drive&nbsp;: <a
 href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+<p>Les rapports de plantage (point&nbsp;6) sont supprimés automatiquement au
+bout de 90&nbsp;jours. Vous pouvez demander leur suppression anticipée, ou toute
+autre question sur vos données, à <a
+href="mailto:jrenard@foxinov.com">jrenard@foxinov.com</a>.</p>
 <p>Désinstaller l'application ne résilie pas un abonnement&nbsp;: résiliez-le dans
 les réglages de votre compte App&nbsp;Store ou Google&nbsp;Play.</p>
 
