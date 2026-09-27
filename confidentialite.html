@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>Politique de confidentialité — FoxScanner</h1>
-<p><em>Dernière mise à jour : 13 juin 2026</em></p>
+<p><em>Dernière mise à jour : 27 septembre 2026</em></p>
 
 <p>FoxScanner est une application de numérisation de documents. Notre principe :
 <strong>vos documents vous appartiennent et restent sous votre contrôle</strong>.
@@ -25,22 +25,35 @@ jamais vos documents.</p>
 <h2>1. Vos documents</h2>
 <p>Les documents que vous scannez (images, PDF) ainsi que le texte reconnu (OCR)
 sont traités <strong>entièrement sur votre appareil</strong> et y sont stockés
-localement. La reconnaissance de texte utilise une technologie embarquée
-(Google&nbsp;ML&nbsp;Kit) qui fonctionne hors ligne : aucun document n'est envoyé
-à un serveur pour être analysé.</p>
+localement. La détection du document, l'amélioration de l'image, la reconnaissance
+de texte et la lecture des QR codes fonctionnent hors ligne, avec des technologies
+embarquées&nbsp;: Apple&nbsp;Vision sur iOS, Google&nbsp;ML&nbsp;Kit (lecture des
+QR codes et 2D-Doc sur iOS et Android, reconnaissance de texte sur Android) et des modèles intégrés
+à l'application. Aucun document n'est envoyé à un serveur pour être analysé.</p>
+<p>Google&nbsp;ML&nbsp;Kit peut transmettre à Google des données techniques de
+diagnostic (modèle et système de l'appareil, performances et configuration des
+fonctions utilisées). Ces données ne permettent pas de vous identifier et ne
+contiennent jamais vos images ni leur texte.</p>
 
-<h2>2. Sauvegarde cloud (optionnelle)</h2>
-<p>Vous pouvez activer une sauvegarde vers <strong>votre propre</strong> compte
-Google&nbsp;Drive ou iCloud. Dans ce cas&nbsp;:</p>
+<h2>2. Synchronisation cloud (Premium, optionnelle)</h2>
+<p>Avec FoxScanner Premium, vous pouvez synchroniser vos documents avec
+<strong>votre propre</strong> compte iCloud ou Google&nbsp;Drive, et les récupérer
+depuis ce compte (par exemple sur un nouvel appareil). La synchronisation n'est
+jamais activée sans votre action. Dans ce cas&nbsp;:</p>
 <ul>
-  <li>la sauvegarde est chiffrée en transit et stockée sur votre compte cloud
+  <li>vos documents sont chiffrés en transit et stockés sur votre compte cloud
       personnel, auquel nous n'avons pas accès&nbsp;;</li>
+  <li>pour iCloud, FoxScanner utilise l'espace iCloud réservé à l'application,
+      rattaché à votre compte Apple&nbsp;;</li>
   <li>pour Google&nbsp;Drive, FoxScanner utilise l'autorisation la plus restreinte
       possible (<code>drive.appdata</code>)&nbsp;: l'application ne peut accéder
       qu'au dossier qu'elle a elle-même créé, jamais à vos autres fichiers&nbsp;;</li>
   <li>la connexion Google (Google&nbsp;Sign-In) ne nous transmet aucune donnée —
       elle sert uniquement à autoriser l'application sur votre appareil.</li>
 </ul>
+<p>Si votre Premium prend fin (abonnement résilié ou expiré), la synchronisation
+s'arrête&nbsp;: les copies déjà présentes dans votre cloud y restent, intactes,
+et vos documents restent sur votre appareil.</p>
 
 <h2>3. Sécurité de l'application</h2>
 <p>Si vous activez le verrouillage par code PIN ou biométrie (Face&nbsp;ID,
@@ -50,14 +63,16 @@ stockage sécurisé local. Elles ne quittent jamais votre appareil.</p>
 <h2>4. Publicité</h2>
 <p>La version gratuite de FoxScanner affiche des publicités via
 <strong>Google&nbsp;AdMob</strong>. À cette fin, Google et ses partenaires peuvent
-collecter&nbsp;: identifiant publicitaire de l'appareil (IDFA/GAID), informations
-sur l'appareil, données d'interaction avec les annonces et données de
-localisation approximative.</p>
+collecter&nbsp;: identifiant publicitaire de l'appareil (IDFA/GAID) et
+identifiant App Set, informations sur l'appareil, interactions avec l'application
+et avec les annonces, données de diagnostic et de performances, et localisation
+approximative (déduite de l'adresse IP). Google les utilise pour diffuser et
+mesurer les annonces (analyse) et pour prévenir la fraude.</p>
 <ul>
   <li>Dans l'Espace économique européen et au Royaume-Uni, aucune donnée n'est
       utilisée à des fins publicitaires sans votre <strong>consentement
       explicite</strong>, recueilli au premier lancement. Vous pouvez modifier
-      votre choix à tout moment dans <em>Paramètres&nbsp;→ Confidentialité des
+      votre choix à tout moment dans <em>Réglages&nbsp;→ Confidentialité des
       annonces</em>.</li>
   <li>Sur iOS, le suivi publicitaire est soumis à votre autorisation via la
       fenêtre App&nbsp;Tracking&nbsp;Transparency d'Apple.</li>
@@ -69,37 +84,66 @@ de confidentialité de Google</a> et <a
 href="https://policies.google.com/technologies/partner-sites">comment Google
 utilise les données</a>.</p>
 
-<h2>5. Achat Premium</h2>
-<p>L'achat unique «&nbsp;Premium&nbsp;» (suppression des publicités) est traité
-par l'App&nbsp;Store (Apple) ou Google&nbsp;Play. Nous ne recevons ni ne stockons
-aucune donnée de paiement. Une fois Premium activé, plus aucune donnée
-publicitaire n'est collectée puisque le SDK publicitaire n'est plus initialisé.</p>
+<h2>5. Premium : abonnements et achat à vie</h2>
+<p>FoxScanner Premium est proposé en abonnement mensuel ou annuel, ou en achat
+unique à vie. Les achats et les abonnements sont entièrement traités par
+l'App&nbsp;Store (Apple) ou Google&nbsp;Play&nbsp;: nous ne recevons ni ne stockons
+aucune donnée de paiement (carte bancaire, adresse de facturation, identité).
+L'application reçoit seulement de la boutique la confirmation de vos droits
+Premium, qu'elle mémorise sur votre appareil.</p>
+<p>Les abonnements se gèrent et se résilient dans les réglages de votre compte
+App&nbsp;Store ou Google&nbsp;Play. Avec Premium, aucune publicité n'est affichée
+et le SDK publicitaire n'est plus initialisé au démarrage de l'application&nbsp;:
+il ne collecte donc plus de données.</p>
 
-<h2>6. Ce que nous ne faisons pas</h2>
+<h2>6. Données techniques conservées sur l'appareil</h2>
+<ul>
+  <li><strong>Compteur de la version gratuite</strong>&nbsp;: pour appliquer la
+      limite quotidienne de documents, l'application enregistre sur votre appareil
+      le nombre de documents enregistrés dans la journée. Ce compteur n'est
+      transmis à personne.</li>
+  <li><strong>Journal de diagnostic</strong>&nbsp;: les dernières erreurs
+      techniques rencontrées par l'application sont gardées en mémoire sur votre
+      appareil et effacées à son redémarrage. Rien n'est envoyé automatiquement&nbsp;:
+      vous pouvez copier ce journal depuis les Réglages pour le joindre à un
+      message au support, si vous le souhaitez.</li>
+</ul>
+
+<h2>7. Ce que nous ne faisons pas</h2>
 <ul>
   <li>Pas de compte FoxScanner, pas de collecte d'adresse e-mail&nbsp;;</li>
-  <li>pas d'outil d'analyse d'audience ni de suivi des plantages tiers&nbsp;;</li>
+  <li>pas d'outil d'analyse d'audience ni de suivi des plantages propre à
+      FoxScanner (en dehors des données techniques de Google&nbsp;ML&nbsp;Kit
+      décrites au point&nbsp;1 et de celles collectées par Google&nbsp;AdMob
+      décrites au point&nbsp;4)&nbsp;;</li>
   <li>pas de vente ni de partage de vos données, en dehors du fonctionnement
       publicitaire décrit ci-dessus&nbsp;;</li>
   <li>aucun accès à vos documents par quiconque, y compris nous.</li>
 </ul>
 
-<h2>7. Suppression des données</h2>
-<p>Toutes les données de l'application sont supprimées en désinstallant
-l'application. Les sauvegardes cloud éventuelles se suppriment depuis
-l'application (ou depuis votre compte Google&nbsp;Drive&nbsp;/ iCloud). Pour
-retirer l'autorisation Google&nbsp;Drive&nbsp;: <a
+<h2>8. Suppression des données</h2>
+<p>Vos documents, le texte reconnu, le compteur et les réglages de l'application
+sont supprimés de l'appareil en désinstallant l'application (FoxScanner les
+exclut des sauvegardes automatiques d'Android). Les copies
+synchronisées se suppriment depuis votre compte cloud&nbsp;: sur iPhone, dans
+<em>Réglages&nbsp;→ [votre nom]&nbsp;→ iCloud&nbsp;→ Gérer le stockage</em>&nbsp;;
+pour Google&nbsp;Drive, sur <a href="https://drive.google.com">drive.google.com</a>,
+<em>Paramètres&nbsp;→ Gérer les applications&nbsp;→ FoxScanner&nbsp;→ Supprimer les
+données d'application masquées</em>. Pour retirer l'autorisation
+Google&nbsp;Drive&nbsp;: <a
 href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+<p>Désinstaller l'application ne résilie pas un abonnement&nbsp;: résiliez-le dans
+les réglages de votre compte App&nbsp;Store ou Google&nbsp;Play.</p>
 
-<h2>8. Enfants</h2>
+<h2>9. Enfants</h2>
 <p>FoxScanner ne s'adresse pas aux enfants de moins de 13&nbsp;ans et ne collecte
 sciemment aucune donnée les concernant.</p>
 
-<h2>9. Modifications</h2>
+<h2>10. Modifications</h2>
 <p>Toute évolution de cette politique sera publiée sur cette page, avec mise à
 jour de la date en tête de document.</p>
 
-<h2>10. Contact</h2>
+<h2>11. Contact</h2>
 <p>Pour toute question relative à vos données&nbsp;:
 <a href="mailto:jrenard@foxinov.com">jrenard@foxinov.com</a></p>
 
